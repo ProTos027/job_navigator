@@ -1,0 +1,17 @@
+{
+    "paths": {
+        "data_path": "./relative/path/to/companies.csv",
+        "models_path": "./relative/path/to/models/"
+        },
+    "models_config":{
+        "title-ner-batch-size": 32,
+        "jd-ner-batch-size": 32
+    },
+    "transformation_data_fetch_size": 32,
+    "max_concurrent_requests": 8,
+    "urls":{
+        "greenhouse_url": "https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true",
+        "ashby_url": "https://api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=true"
+    },
+    "batch_size_for_greenhouse_jobs": 32
+}
