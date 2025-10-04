@@ -16,6 +16,35 @@ The pipeline follows a modular, multi-stage ETL process. Raw data is first inges
 
 ![Database Schema](./docs/Job_nav_schema.svg)
 
+<details>
+<summary><b>Click to view detailed database schema</b></summary>
+
+*   `benefits_clusters(id, name, cluster_id)`
+*   `canonical_jobs(id, job_url, active, title, description, employment_type, location, salary_min, salary_max, salary_currency, salary_interval, company_id, published_at, domain, work_setting, inserted_at)`
+*   `cluster_definitions(cluster_name, member_count, source_table, last_updated, cluster_id)`
+*   `companies(id, name, ats_provider, tier, slug)`
+*   `domains_clusters(id, name, cluster_id)`
+*   `employment_types(id, name)`
+*   `etl_log(id, last_run)`
+*   `job_benefits(job_id, benefit_id)`
+*   `job_domains(job_id, domain_id)`
+*   `job_employment_types(job_id, employment_type_id)`
+*   `job_regions(job_id, region_id)`
+*   `job_requirements(job_id, requirement_id, experience)`
+*   `job_responsibilities(job_id, responsibility_id)`
+*   `job_specializations(job_id, specialization_id)`
+*   `job_tech_stacks(job_id, tech_stack_id)`
+*   `job_work_settings(job_id, work_setting_id)`
+*   `jobs(id, role, level, salary_min, salary_max, salary_currency, salary_interval, overall_experience, language)`
+*   `regions(id, name)`
+*   `requirements_clusters(id, name, cluster_id)`
+*   `responsibilities_clusters(id, name, cluster_id)`
+*   `specializations_clusters(id, name, cluster_id)`
+*   `tech_stacks(id, name)`
+*   `work_settings(id, name)`
+
+</details>
+
 ## Technology Stack
 
 *   **Backend**: Python
