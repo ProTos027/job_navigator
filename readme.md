@@ -69,7 +69,6 @@ The project is organized into distinct modules, each responsible for a specific 
 │   └── 📁 transformer/    # Uses ML models to transform and structure data
 ├── 🐍 manage.py
 ├── 📄 requirements.txt
-├── 🐳 Dockerfile
 ├── ⚙️ config.json.template  # Example configuration
 └── ⚙️ .env.example          # Example environment variables
 ```
