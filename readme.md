@@ -13,7 +13,7 @@ JOB_NAVIGATOR is a sophisticated, containerized ETL pipeline designed to ingest 
 ## High-Level Architecture
 
 The pipeline follows a modular, multi-stage ETL process. Raw data is first ingested, then transformed using a series of handlers and ML models. The extracted information is clustered for standardization before being loaded into a final, structured data warehouse.
-
+![Pipeline Workflow](docs/job_nav_workflow.png)
 ![Database Schema](./docs/Job_nav_schema.svg)
 
 <details>
